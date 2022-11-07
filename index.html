@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body onload="screenLoad()" >
+    <br /><br /><br />
+    <button class="RightSide" onclick="displayProfiles()">
+      List of Profiles
+    </button>
+    <button
+      id="addProfileButton"
+      type="reset"
+      class="LeftSide"
+      onclick="displayForm()"
+    >
+      Add Profile
+    </button>
+    <form id="Profile" onreset="return submitForm()" >
+      <fieldset>
+        <legend>Profile</legend>
+
+        <label for="fname">First name:</label><br />
+        <input class="index" type="text" id="fname" name="inputField" /><br />
+        <span id="fspan" class="mandatoryMessage">This field is mandaotry</span>
+        <p></p>
+        <label for="lname">Last name:</label><br />
+        <input class="index" type="text" id="lname" name="inputField" /><br />
+        <span id="lspan" class="mandatoryMessage">This field is mandaotry</span>
+
+        <p>
+          <label for="DOB">DOB:</label><br />
+          <input
+            class="index"
+            type="date"
+            id="DOB"
+            name="inputField"
+            min="0"
+          /><br />
+          <span id="DOBspan" class="mandatoryMessage"
+            >This field is mandaotry</span
+          >
+        </p>
+        <div class="genderBox">
+          <p>
+            <label>Gender:</label>
+          </p>
+          <p>
+            <input type="radio" id="Male" name="Gender" value="Male" />
+            <label>Male</label>
+            <input type="radio" id="Female" name="Gender" value="Female" />
+            <label>Female</label>
+
+            <span id="genderSpan" class="mandatoryMessage"
+              >This field is mandaotry</span
+            >
+          </p>
+        </div>
+
+        <label>Department</label>
+        <p></p>
+
+        <select id="Dept">
+          <option value="Select">Select</option>
+          <option value="Mech">Mechanical</option>
+          <option value="Computer">Computer Science</option>
+          <option value="EEE">EEE</option>
+          <option value="IT">IT</option>
+        </select>
+
+        <span id="deptSpan" class="mandatoryMessage"
+          >This field is mandaotry</span
+        >
+
+        <p>
+          <button style="display: none;" id="saveButton">Save</button>
+          <button style="display:block ;" id="subButton" type="reset">ADD TO TABLE</button>
+        </p>
+      </fieldset>
+    </form>
+     
+    </div>
+    <div id="profileTableDiv" style="display: none">
+      <table id="profileTable">
+        <tr>
+          <th>S.no</th>
+          <th>Name</th>
+          <th>DOB</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Department</th>
+          <th>E/D</th>
+        </tr>
+      </table>
+      
+<!-- 
+      <br /><br />
+      <label>No of rows:</label>
+      <input id="noOfRows" type="number" min="0" />
+      <button class="navigationButton" id="previousButton">Previous</button>
+      <button class="navigationButton" id="nextButton">Next</button>
+    </div> -->
+
+    <script src="./main.js"></script>
+    <!-- <script src="./test.js"></script>
+    <script src="./text.js"></script> -->
+  </body>
+</html>

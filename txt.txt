@@ -1,0 +1,38 @@
+[
+  {
+    "fname": "ajay",
+    "lname": "cdvdv",
+    "age": 1,
+    "gender": "Male",
+    "dept": "EEE",
+    "DOB": "2022-11-16",
+    "UID": 1667556261871
+  },
+  {
+    "fname": "mani",
+    "lname": "cdvdv",
+    "age": 1,
+    "gender": "Male",
+    "dept": "EEE",
+    "DOB": "2022-11-16",
+    "UID": 1667556261831
+  },
+  {
+    "fname": "siva",
+    "lname": "cdvdv",
+    "age": 1,
+    "gender": "Male",
+    "dept": "EEE",
+    "DOB": "2022-11-16",
+    "UID": 1667556561871
+  },
+  {
+    "fname": "monish",
+    "lname": "cdvdv",
+    "age": 1,
+    "gender": "Male",
+    "dept": "EEE",
+    "DOB": "2022-11-16",
+    "UID": 1662556261871
+  }
+]
